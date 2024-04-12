@@ -34,7 +34,7 @@ func (pe *PE) Forward(x [][]float64) [][]float64 {
     for i := range x {
         for j := range x[i] {
             if i < max_len {
-                x[i][j] += pe.pe[i][j]
+                x[i][j] += pe.pe[i][j]  //summation
             }
         }
     }
