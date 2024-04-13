@@ -3,6 +3,7 @@ package main
 
 import (
 	"fmt"
+	ln "golansformer/layer_normalization"
 	rc "golansformer/residual_connection"
 )
 
@@ -17,4 +18,9 @@ func main() {
 	// 결과 출력
 	fmt.Println("Residual Connection 결과:", output)
 
+	// Layer Normalization
+    normalized := ln.LayerNormalization(output)
+
+	// 결과 출력
+	fmt.Println("Layer Normalization 결과:", normalized)
 }
