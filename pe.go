@@ -1,3 +1,5 @@
+package position
+
 import (
 	"fmt"
 	"math"
